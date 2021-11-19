@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/login.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container header__container">
+            <a href="#" class="logo">
+                <img src="img/Logo.svg" alt="Custom Hoodie">
+            </a>
+            <nav class="header__nav">
+                <div class="header__list">
+                    <li class="header__item"><a href="/`">Главная</a></li>
+                    <li class="header__item"><a href="/products.html">Товары</a></li>
+                    <li class="header__item"><a href="#">Доставка и оплата</a></li>
+                    <li class="header__item"><a href="#">О нас</a></li>
+                    <li class="header__item"><a href="#">Личный кабинет</a></li>
+                </div>
+            </nav>
+            <div class="header__buttons">
+                <button class="header__login">Войти</button>
+                <button class="header__liked"><img class="heart-img" src="img/heart.svg" alt="heart"></button>
+                <button class="header__cart"><img class="cart-img" src="img/cart.svg" alt="cart"><span class="header__counter">1</span></button>
+            </div>
+        </div>
+    </header>
+
+    <div class="container be-relative">
+        <div class="cart">
+            <div class="cart__wrapper">
+                <div class="cart__item">
+                    <img src="img/hoodie-red 1.png" alt="hoddie art" class="cart__img">
+                    <div class="cart__content">
+                        <h2 class="cart__title">Red Hoodie</h2>
+                        <p class="cart__text">Цена: <span class="cart__price">1990</span>₽</p>
+                    </div>
+                    <div class="cart__buttons">
+                        <button class="cart__btn" data-action="plus">+</button>
+                        <span class="cart__counter">1</span>
+                        <button class="cart__btn" data-action="minus">-</button>
+                    </div>
+                    <button class="cart__delete"><img src="img/delete-icon.svg" alt="delete" class="delete-img"></button>
+                </div>
+                <div class="cart__item">
+                    <img src="img/hoodie-red 1.png" alt="hoddie art" class="cart__img">
+                    <div class="cart__content">
+                        <h2 class="cart__title">Red Hoodie</h2>
+                        <p class="cart__text">Цена: <span class="cart__price">1990</span>₽</p>
+                    </div>
+                    <div class="cart__buttons">
+                        <button class="cart__btn" data-action="plus">+</button>
+                        <span class="cart__counter">1</span>
+                        <button class="cart__btn" data-action="minus">-</button>
+                    </div>
+                    <button class="cart__delete"><img src="img/delete-icon.svg" alt="delete" class="delete-img"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Этот контейнер я добавил -->
+    <div class="login__container"> 
+        <form method="post" action="" class="login">
+            <p>
+              <label for="login">E-mail:</label>
+              <input type="text" name="email" id="login" value="name@example.com">
+            </p>
+        
+            <p>
+              <label for="password">Пароль:</label>
+              <input type="password" name="password" id="password" value="4815162342">
+            </p>
+        
+        
+            <p class="login-submit">
+              <button type="submit" class="login-button">Войти</button>
+            </p>
+        
+            <p class="forgot-password"><a href="/user/signup">Еще нет аккаунта?</a></p>
+          </form>
+    </div>
+    
+</body>
+</html>

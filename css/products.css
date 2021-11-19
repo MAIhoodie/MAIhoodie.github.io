@@ -1,0 +1,137 @@
+body {
+    background: url("../img/product__bg.jpg");
+    font-family: 'Montserrat';
+}
+
+.filter__container {
+    padding-top: 200px;
+    margin-bottom: 150px;
+}
+
+
+
+.tag_checked {
+    background: #FFC7CD !important;
+}
+
+.unselectable {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -khtml-user-select: none;    /* Konqueror */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* Internet Explorer/Edge */
+    user-select: none;           /* Non-prefixed version, currently
+                                    not supported by any browser */
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tags p {
+    margin-right: 10px;
+    margin-bottom: 50px;
+}
+
+select {
+    min-width: 70px;
+    padding: 5px 0px 5px;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 18px;
+    margin-right: 50px;
+    margin-bottom: 30px;
+}
+
+button[type="submit"] {
+    color: #fff;
+    background: #000;
+    border-radius: 30px;
+    font-size: 20px;
+    width: 200px;
+    height: 50px;
+}
+
+.lists__item {
+    display: inline-block;
+}
+
+.name_filter {
+    display: inline-block;
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.tags > p > label {
+    border: 1px solid #D2D1D1;
+    color: #000;
+    font-size: 24px;
+    background: #fff;
+    padding: 15px 17px;
+    border-radius: 30px;
+}
+
+.tags > p > label > input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.products__wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.product {
+    text-align: center;
+    background: #FFFFFF;
+    border: 2px solid #D2D1D1;
+    border-radius: 35px;
+    padding: 10px 25px 20px 25px;
+}
+
+.hoody_img {
+    margin-bottom: 20px;
+}
+
+.hoody_id {
+    display: none;
+}
+
+.hoody_discription_two {
+    text-align: left;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;    
+    color: #ACABAB;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #000;
+}
+
+.price {
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 28px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.about_button {
+    padding: 10px;
+    border-radius: 20px;
+    background: #fff;
+    color: #000;
+    border: 1px solid #000;
+    margin-right: 5px;
+}
+
+.buy_button {
+    padding: 10px 15px;
+    border-radius: 20px;
+    background: #000;
+    color: #fff;
+    margin-right: 5px;
+}

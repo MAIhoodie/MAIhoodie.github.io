@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom hoodie</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    <!-- Можно вынести в отдельный файл -->
+    <header class="header">
+        <div class="container header__container">
+            <a href="#" class="logo">
+                <img src="img/Logo.svg" alt="Custom Hoodie">
+            </a>
+            <nav class="header__nav">
+                <div class="header__list">
+                    <li class="header__item"><a href="/`">Главная</a></li>
+                    <li class="header__item"><a href="/products.html">Товары</a></li>
+                    <li class="header__item"><a href="#">Доставка и оплата</a></li>
+                    <li class="header__item"><a href="#">О нас</a></li>
+                    <li class="header__item"><a href="#">Личный кабинет</a></li>
+                </div>
+            </nav>
+            <div class="header__buttons be-relative">
+                <button class="header__login">Войти</button>
+                <button class="header__liked"><img class="heart-img" src="img/heart.svg" alt="heart"></button>
+                <button class="header__cart"><img class="cart-img" src="img/cart.svg" alt="cart"><span class="header__counter">1</span></button>
+                <div class="logout">
+                    <a href="#">Выйти</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container be-relative">
+        <div class="cart">
+            <div class="cart__wrapper">
+                <div class="cart__item">
+                    <img src="img/hoodie-red 1.png" alt="hoddie art" class="cart__img">
+                    <div class="cart__content">
+                        <h2 class="cart__title">Red Hoodie</h2>
+                        <p class="cart__text">Цена: <span class="cart__price">1990</span>₽</p>
+                    </div>
+                    <div class="cart__buttons">
+                        <button class="cart__btn" data-action="plus">+</button>
+                        <span class="cart__counter">1</span>
+                        <button class="cart__btn" data-action="minus">-</button>
+                    </div>
+                    <button class="cart__delete"><img src="img/delete-icon.svg" alt="delete" class="delete-img"></button>
+                </div>
+                <div class="cart__item">
+                    <img src="img/hoodie-red 1.png" alt="hoddie art" class="cart__img">
+                    <div class="cart__content">
+                        <h2 class="cart__title">Red Hoodie</h2>
+                        <p class="cart__text">Цена: <span class="cart__price">1990</span>₽</p>
+                    </div>
+                    <div class="cart__buttons">
+                        <button class="cart__btn" data-action="plus">+</button>
+                        <span class="cart__counter">1</span>
+                        <button class="cart__btn" data-action="minus">-</button>
+                    </div>
+                    <button class="cart__delete"><img src="img/delete-icon.svg" alt="delete" class="delete-img"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Если выносить в отдельный файл, то все что выше -->
+
+    <main>
+
+        <section class="hero">
+            <div class="container hero__container">
+                <h1 class="hero__title">Эти парни готовы продать тебе что-то</h1>
+                <button class="hero__btn">Best Guys</button>
+            </div>
+            <div class="hero__filter"></div>
+        </section>
+
+        <section class="mission">
+            <div class="container mission__container">
+                <div class="mission__column mission__column_paddinged">
+                    <div class="mission__content">
+                        <h2 class="mission__title">Созданы раскрывать твой потанцевал</h2>
+                        <p class="mission__text">Какой-то крутой текстовый блок про преимущества этих толстовок: качество материалов, цвета, принты и прочее. Но мы-то знаем, что это всё очень классно и весело</p>
+                    </div>
+                    <img class="yellow-hoodie drop-shadow" src="img/yellow-gay.png" alt="yellow hoodie">
+                </div>
+                <div class="mission__column">
+                    <img class="white-hoodie drop-shadow " src="img/white-gay.png" alt="white hoodie">
+                </div>
+            </div>
+        </section>
+
+        <section class="about">
+           <div class="about__block">
+               <div class="about__content">
+                   <h2 class="about__title">Представляете, тут должен быть текст на 3 строки!</h2>
+                   <p class="about__text">А тут текст, снова текст и ещё раз текст. Лёва, не забудь убрать этот хороший текст, пожалуйста не забудь. </p>
+               </div>
+               <img class="drop-shadow" src="img/another-one.png" alt="">
+           </div>
+        </section>
+
+        <section class="template">
+            <div class="template__block">
+                <div class="template__content">
+                    <p class="template__subtitle">Би йорселф</p>
+                    <h2 class="template__title">Оставайтесь собой, когда худи виз ю</h2>
+                    <p class="template__text">Опять большая туча текста, которые никто никогда не читает. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta accusamus sunt quasi corrupti necessitatibus omnis.</p>
+                    <a href="#" class="template__link">Купить худи ></a>
+                </div>
+            </div>
+            <div class="template__hoodie">
+                <img src="img/hoodie-red.png" alt="">
+            </div>
+        </section>
+
+    </main>
+
+    <script src="/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom hoodie</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/products.css">
+</head>
+<body>
+    <!-- Можно вынести в отдельный файл -->
+    <header class="header">
+        <div class="container header__container">
+            <a href="#" class="logo">
+                <img src="img/Logo.svg" alt="Custom Hoodie">
+            </a>
+            <nav class="header__nav">
+                <div class="header__list">
+                    <li class="header__item"><a href="/">Главная</a></li>
+                    <li class="header__item"><a href="/products.html">Товары</a></li>
+                    <li class="header__item"><a href="#">Доставка и оплата</a></li>
+                    <li class="header__item"><a href="#">О нас</a></li>
+                    <li class="header__item"><a href="#">Личный кабинет</a></li>
+                </div>
+            </nav>
+            <div class="header__buttons">
+                <button class="header__login">Войти</button>
+                <button class="header__liked"><img class="heart-img" src="img/heart.svg" alt="heart"></button>
+                <button class="header__cart"><img class="cart-img" src="img/cart.svg" alt="cart"><span class="header__counter">1</span></button>
+            </div>
+        </div>
+    </header>
+
+    <div class="container be-relative">
+        <div class="cart">
+            <div class="cart__wrapper">
+                <div class="cart__item">
+                    <img src="img/hoodie-red 1.png" alt="hoddie art" class="cart__img">
+                    <div class="cart__content">
+                        <h2 class="cart__title">Red Hoodie</h2>
+                        <p class="cart__text">Цена: <span class="cart__price">1990</span>₽</p>
+                    </div>
+                    <div class="cart__buttons">
+                        <button class="cart__btn" data-action="plus">+</button>
+                        <span class="cart__counter">1</span>
+                        <button class="cart__btn" data-action="minus">-</button>
+                    </div>
+                    <button class="cart__delete"><img src="img/delete-icon.svg" alt="delete" class="delete-img"></button>
+                </div>
+                <div class="cart__item">
+                    <img src="img/hoodie-red 1.png" alt="hoddie art" class="cart__img">
+                    <div class="cart__content">
+                        <h2 class="cart__title">Red Hoodie</h2>
+                        <p class="cart__text">Цена: <span class="cart__price">1990</span>₽</p>
+                    </div>
+                    <div class="cart__buttons">
+                        <button class="cart__btn" data-action="plus">+</button>
+                        <span class="cart__counter">1</span>
+                        <button class="cart__btn" data-action="minus">-</button>
+                    </div>
+                    <button class="cart__delete"><img src="img/delete-icon.svg" alt="delete" class="delete-img"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Если выносить в отдельный файл, то все что выше -->
+
+    <main>
+        
+        <section class="filter">
+            <div class="container filter__container">
+                <form action method="post">
+                    <div class="tags unselectable">
+                        <p>
+                            <label>
+                                <input type="checkbox" name="tags_submit[]" class="tag" value="Рик и Морти"> Рик и Морти
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="checkbox" name="tags_submit[]" class="tag" value="Рик и Морти"> Здесь
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="checkbox" name="tags_submit[]" class="tag" value="Рик и Морти"> Будут
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="checkbox" name="tags_submit[]" class="tag" value="Рик и Морти"> Различного
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="checkbox" name="tags_submit[]" class="tag" value="Рик и Морти"> Рода
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="checkbox" name="tags_submit[]" class="tag" value="Рик и Морти"> Теги
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="checkbox" name="tags_submit[]" class="tag" value="Рик и Морти"> И да
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="checkbox" name="tags_submit[]" class="tag" value="Рик и Морти"> Это
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="checkbox" name="tags_submit[]" class="tag" value="Рик и Морти"> Чекбоксы
+                            </label>
+                        </p>
+                    </div>
+
+                    <div class="lists">
+                        <div class="lists__item">
+                            <div class="name_filter">Размер</div>
+                            <select class="size" name="filters[size]">
+                                <option ></option>
+                                <option value="36">36</option>
+                                <option value="38">38</option>
+                                <option value="39">39</option>
+                                <option value="40">40</option>
+                                <option value="41">41</option>
+                                <option value="42">42</option>
+                            </select>
+                        </div>
+
+                        <div class="lists__item">
+                            <div class="name_filter">Фасон</div>
+                            <select class="style" name="filters[style]">
+                                <option ></option>
+                                <option value="Без капюшона">Без капюшона</option>
+                                <option value="Стандартный">Стандартный</option>
+                                <option value="Широкие рукава">Широкие рукава</option>
+                            </select>
+                        </div>
+
+                        <div class="lists__item">
+                            <div class="name_filter">Цвет</div>
+                            <select class="color" name="filters[color]">
+                                <option ></option>
+                                <option value="Черный">Черный</option>
+                                <option value="Белый">Белый</option>
+                                <option value="Синий">Синий</option>
+                                <option value="Здесь">Зеленый</option>
+                                <option value="Красный">Красный</option>
+                            </select>
+                        </div>
+
+                        <div class="lists__item">
+                            <div class="name_filter">Материал</div>
+                            <select class="material" name="filters[material]">
+                                <option ></option>
+                                <option value="Синтетика">Синтетика</option>
+                                <option value="Хлопок">Хлопок</option>
+                            </select>
+                        </div>
+
+                        <div class="lists__item">
+                            <div class="name_filter">Расположение принта</div>
+                            <select class="print_place" name="filters[print_place]">
+                                <option ></option>
+                                <option value="На рукавах">На рукавах</option>
+                                <option value="На спине">На спине</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button href="" type="submit" name="button" value="use">Применить<p></p></button>
+                </form>
+            </div>
+        </section>
+
+        <section class="products">
+            <div class="container products__container">
+                <div class="products__wrapper">
+                    <div class="product">
+                        <img src="img/hoodie-red 1.png" alt="" class="hoody_img">
+                        <div class="hoody_id">1</div>
+                        <div class="hoody_discription_two">Самый классный, самый лучший кофта</div>
+                        <div class="price">1000₽</div>
+                        <form class="product_button">
+                            <button class="about_button" name="about_button" value="1">Подробнее</button>
+                            <button class="buy_button" name="buy_button" value="1">В корзину</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    
+
+    <script src="/js/main.js"></script>
+</body>
+</html>
