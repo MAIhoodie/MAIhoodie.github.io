@@ -78,19 +78,121 @@ button[type="submit"] {
     opacity: 0;
 }
 
-.products__wrapper {
+
+/* .products__wrapper {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
+} */
+
+.products__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
+/* .product {
+    text-align: center;
+    background: #FFFFFF;
+    border: 2px solid #D2D1D1;
+    border-radius: 35px;
+    padding: 10px 25px 20px 25px;
+} */
+
 .product {
+    margin-bottom: 30px;
+    width: 24%;
     text-align: center;
     background: #FFFFFF;
     border: 2px solid #D2D1D1;
     border-radius: 35px;
     padding: 10px 25px 20px 25px;
 }
+/* Добавлено */
+.product_full {
+    width: 48%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    background: #FFFFFF;
+    border: 2px solid #D2D1D1;
+    border-radius: 35px;
+    padding: 10px 25px 20px 25px;
+}
+
+.wrapper_1 {
+    width: 50%;
+}
+
+.wrapper_2 {
+    width: 45%;
+}
+
+.hoody_title {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.hoody_discription {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.radio-block {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.radio-block > label {
+    border: 1px solid #D2D1D1;
+    color: #000;
+    font-size: 12px;
+    background: #fff;
+    padding: 5px 12px;
+    border-radius: 30px;
+    margin-right: 5px;
+}
+
+.radio-block > label > input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.radio_checked {
+    background: #FFC7CD !important;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+    margin:0;
+}
+input[type=number]{
+  -moz-appearance:textfield;
+}
+
+.hoody_quantity {
+    width: 42px;
+    height: 32px;
+    border: 2px solid #D2D1D1;
+    outline: none;
+    text-align: center;
+}
+
+.hoody_plus {
+    margin-right: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.hoody_minus {
+    margin-left: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Конец добавлено */
 
 .hoody_img {
     margin-bottom: 20px;
@@ -109,6 +211,7 @@ button[type="submit"] {
     padding-bottom: 10px;
     margin-bottom: 10px;
     border-bottom: 1px solid #000;
+    margin-right: 30px;
 }
 
 .price {
@@ -135,3 +238,5 @@ button[type="submit"] {
     color: #fff;
     margin-right: 5px;
 }
+
+/* Для полного описания товара */
