@@ -9,12 +9,27 @@ document.addEventListener("DOMContentLoaded", function(){
         }
     });
 
-    // ДЛЯ FILTER
+    
+    // ДЛЯ FILTER В PRODUCTS
+    let tagsList = document.querySelectorAll(".tag")
+    console.log(tagsList)
+    for (let item of tagsList) {
+        if (item.checked) {
+            let itemLabel = item.closest('label')
+            itemLabel.classList.add("tag_checked")
+        }
+    }
+
     document.addEventListener("click", function(event) {
-        if (event.target.classList.contains("tag")) {
-            event.target.closest('label').classList.toggle("tag_checked");
+        if (event.target.classList.contains("tag") && event.target.checked) {
+            event.target.closest('label').classList.add('tag_checked')
+        }
+
+        else if (event.target.classList.contains("tag") && !(event.target.checked)) {
+            event.target.closest('label').classList.remove('tag_checked')
         }
     });
+
 
     // Открытие списка с возможностью выйти, только для авторизованного пользователя
     document.addEventListener("click", function(event) {
@@ -22,4 +37,5 @@ document.addEventListener("DOMContentLoaded", function(){
             document.querySelector(".logout").classList.toggle("logout_visible")
         }
     });
+
 });
