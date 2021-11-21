@@ -88,7 +88,6 @@ button[type="submit"] {
 .products__wrapper {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
 }
 
 /* .product {
@@ -100,8 +99,9 @@ button[type="submit"] {
 } */
 
 .product {
+    margin-right: 10px;
     margin-bottom: 30px;
-    width: 24%;
+    width: 310px;
     text-align: center;
     background: #FFFFFF;
     border: 2px solid #D2D1D1;
@@ -109,15 +109,28 @@ button[type="submit"] {
     padding: 10px 25px 20px 25px;
 }
 /* Добавлено */
+.product_button {
+    display: inline-block;
+}
+
 .product_full {
-    width: 48%;
-    display: flex;
+    margin-right: 10px;
+    width: 620px;
+    display: none;
     align-items: center;
     margin-bottom: 30px;
     background: #FFFFFF;
     border: 2px solid #D2D1D1;
     border-radius: 35px;
     padding: 10px 25px 20px 25px;
+}
+
+.non-visible {
+    display: none !important;
+}
+
+.d-flex {
+    display: flex;
 }
 
 .wrapper_1 {
