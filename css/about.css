@@ -1,0 +1,55 @@
+body {
+    background: url("../img/product__bg.jpg");
+    font-family: 'Montserrat';
+}
+
+.about {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.about__container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: #fff;
+    border-radius: 35px;
+    padding: 38px   ;
+}
+
+.about__column {
+    max-width: 600px;
+}
+
+.about__point {
+    list-style: disc;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 18px;
+    font-family: "Roboto";
+}
+
+.about__main-title {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 53px;
+    margin-bottom: 20px;   
+}
+
+.about__title {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 33px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.about__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 20px;
+    font-family: "Roboto";
+}
+
