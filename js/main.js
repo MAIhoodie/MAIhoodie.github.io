@@ -48,16 +48,23 @@ document.addEventListener("DOMContentLoaded", function(){
 
 
     // ДЛЯ + и - В ПОЛНОЙ КАРТОЧКЕ ТОВАРА
-    let number = document.querySelector(".hoody_quantity").value;
+    // let number = document.querySelector(".hoody_quantity").value;
     document.addEventListener("click", function(event){ 
         let item = event.target
         if (item.classList.contains("hoody_plus")) {
+            let number = event.target.nextElementSibling.value
             number = +number + 1;
+            event.target.nextElementSibling.value = number
         }
-        if (item.classList.contains("hoody_minus") && number > 1) {
-            number = +number - 1;
+
+        if (item.classList.contains("hoody_minus")) {
+            let number = event.target.previousElementSibling.value
+            if (number > 1) {
+                console.log(number)
+                number = +number - 1;
+                event.target.previousElementSibling.value = number
+            }
         }
-        document.querySelector(".hoody_quantity").value = number
     });
 
 
@@ -79,6 +86,7 @@ document.addEventListener("DOMContentLoaded", function(){
             itemFull.classList.add("d-flex")
         }   
     });
+
     // document.addEventListener("click", function(event) {
     //     if (event.target.classList.contains("hide_button")) {
     //         const itemFull = event.target.closest('.product_full')
